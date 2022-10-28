@@ -18,10 +18,13 @@ def ordenar_largo():
     naves_largo.sort() ; naves_largo.reverse()
     print(f"\n\nLas naves ordenadas por largo son {naves_largo}")
 
-ordenar_largo()
-ordenar_naves()
 
 def millenium_falcon():
     for row in star_naves:
         if row['Name'] == "Millennium Falcon":
-            print(f"\n\nLa información del Millenium Falcon es {row}")
+            print(f"\n\nLa información del Falcón Milenario es {row}")
+
+def death_star():
+    for row in star_naves:
+        if row['Name'] == "Death Star":
+            print(f"\n\nLa información de la Estrella de la Muerte es {row}")
