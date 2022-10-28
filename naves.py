@@ -20,3 +20,8 @@ def ordenar_largo():
 
 ordenar_largo()
 ordenar_naves()
+
+def millenium_falcon():
+    for row in star_naves:
+        if row['Name'] == "Millennium Falcon":
+            print(f"\n\nLa información del Millenium Falcon es {row}")
