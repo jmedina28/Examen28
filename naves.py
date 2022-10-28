@@ -28,3 +28,10 @@ def death_star():
     for row in star_naves:
         if row['Name'] == "Death Star":
             print(f"\n\nLa información de la Estrella de la Muerte es {row}")
+
+def cinco_naves():
+    naves = []
+    for row in star_naves:
+        naves.append(row['Name'] + " " + row['Passengers'])
+    naves.sort() ; naves.reverse()
+    print(f"\n\nLas cinco naves con mayor cantidad de pasajeros son {naves[:5]}")
