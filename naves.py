@@ -35,3 +35,31 @@ def cinco_naves():
         naves.append(row['Name'] + " " + row['Passengers'])
     naves.sort() ; naves.reverse()
     print(f"\n\nLas cinco naves con mayor cantidad de pasajeros son {naves[:5]}")
+    
+def comienzan_at():
+    at = []
+    for row in star_naves:
+        if row['Name'].startswith("AT"):
+            at.append(row['Name'])
+    print(f"\n\nLas naves que comienzan con AT son {at}")
+
+def seis_pasajeros():
+    pasajeros = []
+    for row in star_naves:
+        if int(row['Passengers']) >= 6:
+            pasajeros.append(row['Name'])
+    print(f"\n\nLas naves que pueden llevar seis o más pasajeros son {pasajeros}")
+
+def bigger():
+    death_star = []
+    for row in star_naves:
+        if row['Name'] == "Death Star":
+            death_star.append(row)
+    print(f"\n\nLa información de la nave con la mayor longitud es {death_star}")
+
+def smaller():
+    sp_wp = []
+    for row in star_naves:
+        if row['Name'] == "SP-Wp":
+            sp_wp.append(row)
+    print(f"\n\nLa información de la nave con un largo menor es {sp_wp}")
