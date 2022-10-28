@@ -1,5 +1,5 @@
 # Examen28
-<h1 align="center">Evaluación del Tema 1</h1>
+<h1 align="center">Evaluación del Tema 3</h1>
 
 <h3 align="center">Perfil de GitHub del autor de este proyecto:</h3>
 
