@@ -1,12 +1,11 @@
-
-def lanzador():
+def lanzar():
     print("Bienvenido al lanzador de ejercicios")
     print("1. Hanoi")
     print("2. Naves")
     print("3. Sarrus")
     print("4. Polinomio")
     print("5. Hash")
-    print("5. Salir")
+    print("6. Salir")
     opcion = int(input("Ingrese una opción: "))
     if opcion == 1: 
         import hanoi
@@ -18,3 +17,5 @@ def lanzador():
         print("No hay polinomio")
     elif opcion == 5:
         import ejercicio5
+    elif opcion == 6:
+        print("Hasta la proxima")
