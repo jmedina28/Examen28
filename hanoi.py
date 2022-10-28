@@ -6,8 +6,5 @@ def Hanoi(n, origen, destino, auxiliar):
         print(f"Mover disco de {origen} a {destino}")
         Hanoi(n-1, auxiliar, destino, origen)
 
-def ejercicio1():
-    Hanoi(5, "Origen", "Destino", "Auxiliar")
 
-
-ejercicio1()
+Hanoi(int(input("Ingrese un número de discos: ")), "Origen", "Destino", "Auxiliar")
